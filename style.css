@@ -1,12 +1,125 @@
-body {
-	color: grey;
-	padding: 50px;
-	font-family: Georgia;
+.container {
+	display: flex;
+	flex-direction: row;
 }
 
-h1 {
-	color: lightgreen;
-	padding: 50px;
-	font-weight: bold;
-	font-size: 48px;
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+	height: 100%;
+	background-color: rgb(25,25,25);
+	color: rgb(206, 204, 204);
+}
+
+.sidebar div {
+	padding: 20px;
+}
+
+.sidebar-top {
+	display: flex;
+	flex-direction: row;
+	color: white;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.main {
+	width: 80%;
+	height: 100%;
+	background-color: rgb(206, 204, 204); 
+}
+
+.topbar, .general_statistics, .links {
+	background-color: white;
+}
+
+.general_statistics, .links {
+	margin: 10px auto;
+	width: 90%;
+	box-shadow: 4px 4px 8px grey;
+	padding: 10px;
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+	align-items: : center;
+}
+
+.links h1, .main h1{
+	color: rgb(206, 204, 204);
+	text-transform: uppercase;
+}
+
+.line {
+	border: solid rgb(206, 204, 204) 0.5px;
+
+}
+
+.links table {
+	margin: 20px auto;
+	width: 60%;
+}
+
+.links tr:hover {
+	background-color: rgb(206, 204, 204);
+}
+
+.links tr:hover .trash img {
+	visibility: visible;
+}
+
+.links tr:hover .links img {
+	visibility: visible;
+}
+
+.links button {
+	color: white;
+	background-color: rgb(245,130,32);
+	padding: 10px;
+	width: 10%;
+	border: none;
+	border-radius: 5%;
+	margin: 40px auto;
+}
+
+.trash img {
+	height: 15px;
+	padding: 5px;
+	visibility: hidden;
+}
+
+.links img {
+	height: 10px;
+	visibility: hidden;
+}
+
+.general_statistics table {
+	border: solid rgb(206, 204, 204);
+	margin: 30px auto;
+}
+
+.topbar {
+	display: flex;
+	flex-direction: row;
+	align-items: right;
+}
+
+
+.wallet, .profile {
+	display: flex;
+	flex-direction: row;
+	width: 20%;
+}
+
+.bell {
+	width: 10%;
+}
+
+.logout {
+	width: 10%;
+}
+
+.wallet img, .bell img, .profile img, .logout img {
+	height: 20px;
 }
