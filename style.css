@@ -1,6 +1,7 @@
 .container {
 	display: flex;
 	flex-direction: row;
+	font-family: 'Raleway', sans-serif;
 }
 
 .sidebar {
@@ -21,6 +22,28 @@
 	flex-direction: row;
 	color: white;
 	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 12px;
+}
+
+.sidebar-top i {
+	color: lightgrey;
+	font-size: 30px;
+	float: right;
+}
+
+.sidebar-tab {
+	display: flex;
+	flex-direction: row;
+}
+
+.sidebar-tab p {
+	margin-left: 10px;
+}
+
+.sidebar-tab img {
+	height: 25px;
+	padding: 10px;
+	fill: white;
 }
 
 .main {
@@ -38,6 +61,11 @@
 	width: 90%;
 	box-shadow: 4px 4px 8px grey;
 	padding: 10px;
+}
+
+.calendar img {
+	background-color: rgb(245,130,32);
+	height: 20px;
 }
 
 .links {
