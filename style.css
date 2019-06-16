@@ -8,7 +8,6 @@
 	display: flex;
 	flex-direction: column;
 	width: 20%;
-	height: 100%;
 	background-color: rgb(25,25,25);
 	color: rgb(206, 204, 204);
 }
@@ -23,12 +22,13 @@
 	color: white;
 	font-family: 'Gloria Hallelujah', cursive;
 	font-size: 12px;
+	justify-content: space-between;
 }
 
 .sidebar-top i {
 	color: lightgrey;
 	font-size: 30px;
-	float: right;
+	margin-top: 25px;
 }
 
 .sidebar-tab {
@@ -66,6 +66,7 @@
 .calendar img {
 	background-color: rgb(245,130,32);
 	height: 20px;
+
 }
 
 .links {
@@ -87,6 +88,7 @@
 .links table {
 	margin: 20px auto;
 	width: 60%;
+	border-collapse: collapse;
 }
 
 .links tr:hover {
@@ -97,7 +99,7 @@
 	visibility: visible;
 }
 
-.links tr:hover .links img {
+.links tr:hover .linking img {
 	visibility: visible;
 }
 
@@ -117,7 +119,7 @@
 	visibility: hidden;
 }
 
-.links img {
+.linking img {
 	height: 10px;
 	visibility: hidden;
 }
@@ -130,24 +132,66 @@
 .topbar {
 	display: flex;
 	flex-direction: row;
-	align-items: right;
+	justify-content: flex-end;
+	border: solid 0.5px lightgrey;
+	box-shadow: 4px 4px 8px grey;
 }
 
 
-.wallet, .profile {
+.wallet {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	width: 20%;
+	border: solid 0.5px lightgrey;
 }
 
-.bell {
+.wallet img {
+	height: 25px;
+	margin: 10px;
+}
+
+.wallet i {
+	margin: 0 10px;
+}
+
+.profile {	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 20%;
+	border: solid 0.5px lightgrey;
+}
+
+.profile img {
+	height: 25px;
+	border: solid 0.5px lightgrey;
+	border-radius: 50%;
+	margin: 0 10px;
+}
+
+.bell, .logout {
 	width: 10%;
+	border: solid 0.5px lightgrey;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.logout {
-	width: 10%;
+
+.bell img {
+	height: 25px;
 }
 
-.wallet img, .bell img, .profile img, .logout img {
-	height: 20px;
+.logout i {
+	font-size: 25px;
+	color: lightgrey;
+}
+
+.wallet p {
+	font-weight: bold;
+	color: lightgrey;
+	font-size: 20px;
 }
