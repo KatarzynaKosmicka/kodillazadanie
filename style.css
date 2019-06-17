@@ -46,10 +46,15 @@
 	fill: white;
 }
 
+.sidebar-tab:hover {
+	background-color: rgb(40, 40, 40);
+	border-left: solid rgb(245,130,32) 10px;
+}
+
 .main {
 	width: 80%;
 	height: 100%;
-	background-color: rgb(206, 204, 204); 
+	background-color: rgb(245, 245, 242); 
 }
 
 .topbar, .general_statistics, .links {
@@ -58,14 +63,29 @@
 
 .general_statistics, .links {
 	margin: 10px auto;
-	width: 90%;
-	box-shadow: 4px 4px 8px grey;
+	width: 95%;
+	box-shadow: 4px 4px 8px lightgrey;
 	padding: 10px;
+	margin-top: 30px;
+}
+
+.general_statistics h1, .links h1 {
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+.calendar {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 .calendar img {
 	background-color: rgb(245,130,32);
 	height: 20px;
+	padding: 10px;
+	border-radius: 5%;
 
 }
 
@@ -89,17 +109,26 @@
 	margin: 20px auto;
 	width: 60%;
 	border-collapse: collapse;
+	border-bottom: : solid lightgrey 0.5px;
+}
+
+
+.links td {
+	padding: 15px;
+}
+.links tr {
+	border-top: solid lightgrey 0.5px;
 }
 
 .links tr:hover {
 	background-color: rgb(206, 204, 204);
 }
 
-.links tr:hover .trash img {
+.links tr:hover .trash svg {
 	visibility: visible;
 }
 
-.links tr:hover .linking img {
+.links tr:hover .linking svg {
 	visibility: visible;
 }
 
@@ -113,14 +142,14 @@
 	margin: 40px auto;
 }
 
-.trash img {
+.trash svg {
 	height: 15px;
-	padding: 5px;
 	visibility: hidden;
 }
 
-.linking img {
-	height: 10px;
+.linking svg {
+	fill: rgb(245,130,32);
+	height: 12px;
 	visibility: hidden;
 }
 
@@ -194,4 +223,34 @@
 	font-weight: bold;
 	color: lightgrey;
 	font-size: 20px;
+}
+
+.manager {
+	display: flex;
+	flex-direction: row;
+	color: #5e79a5;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.manager img {
+	height: 70px;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+.sidebar h2 {
+	margin: 20px auto;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+.sidebar-manager {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-top: solid lightgrey 0.5px;
 }
